@@ -48,6 +48,9 @@ nav{
     color:darkgrey;
 }
 
+.none{
+    display: none;
+}
 
 .ponto{
     display: flex;
@@ -88,6 +91,9 @@ nav{
     color: orange;
 }
 
+#btn{
+    color: white;
+}
 
 
 /* @media screen and (max-width:750px){
@@ -192,6 +198,7 @@ nav{
 .de{
     font-size: 17px;
     padding: 40px;
+    color: white;
     
 }
 
@@ -220,3 +227,26 @@ footer{
 .d{
     width: 120px;
 }
+
+
+
+.g{
+    width: 60px;
+    background-color: rgb(118, 118, 136);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.g:hover{
+    color: white;
+}
+
+
+#search{
+    width: 400px;
+}
+

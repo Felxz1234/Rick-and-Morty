@@ -12,58 +12,72 @@
     <div class="Caixona ">
         <div class="caixa">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img class="d" src="../Rick_and_Morty_logo.webp" alt=""></a>
+                <a class="navbar-brand" href="/public/index.html"><img class="d" src="../Rick_and_Morty_logo.webp" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
+                       
                     <li class="nav-item active">
-                      <a class="nav-link" href="/public/index.html">Home <span class="sr-only">(current)</span></a>
+                      <input class="m-1" type="text" placeholder="Status" id="status" list="faixa">
+                      <datalist id="faixa">
+                        <option value="Alive">Alive</option>
+                        <option value="Dead">Dead</option>
+                        <option value="unknown">unknown</option>
+                      </datalist>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                     
+                    <li class="nav-item active">
+                      <input class="m-1" type="text" placeholder="species" id="species" list="faixa2">
+                      <datalist id="faixa2">
+                        <option value=" Poopybutthole">Poopybutthole</option>
+                        <option value=" Mythological Creature">Mythological Creature</option>
+                        <option value=" Human">Human</option>
+                        <option value=" Alien">Alien</option>
+                        <option value=" Humanoid">Humanoid</option>
+                        <option value=" Animal">Animal</option>
+                        <option value="Robot">Robot</option>
+                        <option value="Cronenberg">Cronenberg</option>
+                        <option value="unknown">unknown</option>
+                      </datalist>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
+                     
+                     
+                    
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <button onclick="DeletePersona()" class="btn btn-danger m-1">Apagar Personagens</button>
+                  <form class="form-inline d-flex my-2 my-lg-0">
                     <input id="buscar" name="search" class="form-control mr-sm-2 " type="search" placeholder="Digite" aria-label="Search">
-                    <a onclick="SearchPersonaByName()" class="g" >Search</a>
+                    <a onclick="SearchPersonaByName()" class="g m-1" >Search</a>
+                    
                   </form>
+                 
                 </div>
               </nav>
-            <main>
+            <main class="d-flex flex-column align-items-center">
                
                  <div class="titu ">
-                    <div>the rick and morty </div>   
+                    <div>the rick and morty </div>  
+                    
                 </div>
+        
     
                 
                 <section class="items ">
                     <div id="personagens" class="personagens">
                         
                     </div>
+                   
                           
                 </section>
+               
             </main>
             <footer>
-              <ul class="description">
-                <li class="de"><button onclick="nextPg()" class="btn btn-info">next</button></li>
+              <ul id="description" class="description">
+
+                <li><button id="botao" onclick="NextPg()" class=" btn btn-info">next</button></li>
+
               </ul>
             </footer>
         </div>
